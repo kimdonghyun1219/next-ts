@@ -29,7 +29,20 @@ yarn-error.log*
 
 # vercel
 .vercel
+.now
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# macOs
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# intelliJ
+.idea/*.iml
+*.iml
+*.idea/*.xml
+*.idea
+
