@@ -16,14 +16,8 @@
     }
   },
   "rules": {
-    "no-var": "error",
-    "prefer-const": ["error", {
-      "destructuring": "any",
-      "ignoreReadBeforeAssign": false
-    }],
-    "spaced-comment": ["error", "never"],
     "array-bracket-spacing": ["error", "never"],
-    "brace-style": ["error", "allman"],
+    "eqeqeq": ["error", "always"],
     "indent": ["warn", 2, {
       "SwitchCase": 1,
       "MemberExpression": 1,
@@ -33,25 +27,32 @@
       "ArrayExpression": 1,
       "ObjectExpression": 1
     }],
-    "semi": ["error", "always"],
-    "eqeqeq": ["error", "always"],
-    "quotes": ["error", "single"],
-    "no-eval": "error",
     "no-await-in-loop": "error",
     "no-cond-assign": "error",
     "no-console": "warn",
+    "no-var": "error",
     "no-dupe-args": "error",
     "no-duplicate-case": "error",
     "no-empty": "warn",
+    "no-eval": "error",
     "no-ex-assign": "error",
     "no-extra-semi": "warn",
-    "no-trailing spaces": "error",
-    "padded-blocks": ["error", "never"],
     "no-multiple-empty-lines": ["warn", {
       "max": 2,
       "maxBOF": 0,
       "maxEOF": 1
     }],
-    "no-multi-str": "error"
+    "no-multi-str": "error",
+    "no-trailing-spaces": ["warn", {
+      "ignoreComments": true
+    }],
+    "padded-blocks": ["error", "never"],
+    "prefer-const": ["error", {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false
+    }],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "spaced-comment": "warn"
   }
 }
